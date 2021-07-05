@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="join">
+      <label for="env">Env:</label>
+      <input type="text" id="env" name="env" value="prod-in" />
+      <br />
+      <label for="token">Token generation endpoint:</label>
+      <input type="text" id="token" name="token" value="" />
+      <br />
+      <label for="room">Room ID:</label>
+      <input
+        type="text"
+        id="room"
+        name="room"
+        value="60ab9d4a7d71267bfbd45b12"
+      />
+      <br />
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="abcd" />
+      <br />
+      <label for="role">Role:</label>
+      <input type="text" id="role" name="role" value="Student" />
+      <br />
+      <button id="joinBtn">Join</button>
+      <button id="leaveBtn">Leave</button>
+    </div>
+
+    <div>
+      <h3>Speaker</h3>
+      <div id="speaker"></div>
+    </div>
+
+    <div>
+      <h3>Conference</h3>
+      <button id="toggleAudio">Toggle Audio</button>
+      <button id="toggleVideo">Toggle Video</button>
+      <div id="peers"></div>
+    </div>
+
+    <div>
+      <h3>Messages</h3>
+      <div
+        id="messages"
+        style="
+          max-height: 200px;
+          white-space: pre-wrap;
+          overflow: scroll;
+          width: 500px;
+          overflow-x: hidden;
+        "
+      ></div>
+      <input
+        style="width: 500px;"
+        id="msgInput"
+        placeholder="type your message..."
+      ></textarea>
+    </div>
+
+    <script src="src/index.ts"></script>
+  </body>
+</html>
